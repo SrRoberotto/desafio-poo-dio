@@ -12,10 +12,6 @@ public class Main {
 
         Mentoria mentoria = new Mentoria("mentoria de java","descrição mentoria java",LocalDate.now());
 
-        /*System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);*/
-
         Bootcamp bootcamp = new Bootcamp("Bootcamp Java Developer", "Descrição Bootcamp Java Developer");
         bootcamp.addConteudos(curso1);
         bootcamp.addConteudos(curso2);
