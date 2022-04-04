@@ -14,6 +14,10 @@ public class Bootcamp {
     private Set<Dev> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
+    public Bootcamp (String nome, String descricao){
+        this.setNome(nome);
+        this.setDescricao(descricao);
+    }
 
     public String getNome() {
         return nome;
@@ -51,8 +55,12 @@ public class Bootcamp {
         return conteudos;
     }
 
-    public void setConteudos(Set<Conteudo> conteudos) {
+    private void setConteudos(Set<Conteudo> conteudos) {
         this.conteudos = conteudos;
+    }
+
+    public void addConteudos(Conteudo conteudo) {
+        this.conteudos.add(conteudo);
     }
 
     @Override
